@@ -67,9 +67,9 @@ export default function Footer() {
               Visit Us
             </h4>
             <p className="text-[#FDFCF0]/60 text-sm text-center md:text-left leading-loose">
-              Jl. Senopati No. 123
+              Jl.Slamet Riyadi No. 123
               <br />
-              Jakarta Selatan, Indonesia
+              Surakarta, Indonesia
               <br />
               <span className="text-white/30">Setiap Hari: 08:00 - 22:00</span>
             </p>
