@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "nama": "Creamy Latte",
+    "harga": "Rp 35.000",
+    "img": "https://images.unsplash.com/photo-1536441573428-575b779faee4",
+    "deskripsi": "Perpaduan espresso premium dengan susu evaporasi yang sangat lembut.",
+    "kategori": "Coffee",
+    "isFavorite": true
+  },
+  {
+    "id": 2,
+    "nama": "Espresso Romado",
+    "harga": "Rp 25.000",
+    "img": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04",
+    "deskripsi": "Double shot espresso dengan sentuhan zest kulit lemon segar ala Italia.",
+    "kategori": "Coffee",
+    "isFavorite": true
+  },
+  {
+    "id": 3,
+    "nama": "Japanese Matcha",
+    "harga": "Rp 32.000",
+    "img": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7",
+    "deskripsi": "Matcha autentik dari Uji, Jepang dengan tekstur creamy dan sedikit manis.",
+    "kategori": "Non-Coffee",
+    "isFavorite": true
+  },
+  {
+    "id": 4,
+    "nama": "Caramel Macchiato",
+    "harga": "Rp 38.000",
+    "img": "https://images.unsplash.com/photo-1485808191679-5f63bb3fd21b",
+    "deskripsi": "Espresso dengan sirup vanilla, susu, dan saus karamel di atasnya.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 5,
+    "nama": "Iced Americano",
+    "harga": "Rp 25.000",
+    "img": "https://images.unsplash.com/photo-1551033406-611cf9a28f67",
+    "deskripsi": "Kopi hitam dingin yang ringan dan menyegarkan dari biji Arabica.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 6,
+    "nama": "Chocolate Signature",
+    "harga": "Rp 30.000",
+    "img": "https://images.unsplash.com/photo-1544787210-2213d240ad67",
+    "deskripsi": "Cokelat hitam premium yang kental dengan topping foam susu.",
+    "kategori": "Non-Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 7,
+    "nama": "Flat White",
+    "harga": "Rp 34.000",
+    "img": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f",
+    "deskripsi": "Double ristretto dengan micro-foam susu yang halus.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 8,
+    "nama": "Vanilla Cold Brew",
+    "harga": "Rp 36.000",
+    "img": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5",
+    "deskripsi": "Kopi seduhan dingin selama 12 jam dengan aroma vanilla manis.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 9,
+    "nama": "Butter Croissant",
+    "harga": "Rp 22.000",
+    "img": "https://images.unsplash.com/photo-1555507036-ab1f4038808a",
+    "deskripsi": "Pastry Prancis yang renyah di luar dan sangat lembut di dalam.",
+    "kategori": "Snack",
+    "isFavorite": false
+  },
+  {
+    "id": 10,
+    "nama": "Chocolate Brownies",
+    "harga": "Rp 25.000",
+    "img": "https://images.unsplash.com/photo-1606312619070-d48b4c652a52",
+    "deskripsi": "Brownies cokelat panggang yang fudgy dengan taburan sea salt.",
+    "kategori": "Snack",
+    "isFavorite": false
+  },
+  {
+    "id": 11,
+    "nama": "Earl Grey Tea",
+    "harga": "Rp 28.000",
+    "img": "https://images.unsplash.com/photo-1521503862198-2ae9a997bbc9",
+    "deskripsi": "Teh hitam klasik dengan aroma jeruk Bergamot yang elegan.",
+    "kategori": "Non-Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 12,
+    "nama": "Cappuccino",
+    "harga": "Rp 32.000",
+    "img": "https://images.unsplash.com/photo-1534778101976-62847782c213",
+    "deskripsi": "Keseimbangan sempurna antara espresso, susu panas, dan foam tebal.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 13,
+    "nama": "Dirty Chai Latte",
+    "harga": "Rp 37.000",
+    "img": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e",
+    "deskripsi": "Teh rempah (Chai) yang dicampur dengan satu shot espresso.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 14,
+    "nama": "Strawberry Mojito",
+    "harga": "Rp 30.000",
+    "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd",
+    "deskripsi": "Minuman soda segar dengan potongan strawberry asli dan daun mint.",
+    "kategori": "Non-Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 15,
+    "nama": "Cheese Danish",
+    "harga": "Rp 28.000",
+    "img": "https://images.unsplash.com/photo-1509440159596-0249088772ff",
+    "deskripsi": "Pastry manis dengan isian krim keju gurih di bagian tengah.",
+    "kategori": "Snack",
+    "isFavorite": false
+  },
+  {
+    "id": 16,
+    "nama": "Affogato",
+    "harga": "Rp 35.000",
+    "img": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9",
+    "deskripsi": "Satu scoop es krim vanilla yang disiram dengan espresso panas.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 17,
+    "nama": "Red Velvet Latte",
+    "harga": "Rp 33.000",
+    "img": "https://images.unsplash.com/photo-1610632380989-680fe40816c6",
+    "deskripsi": "Minuman manis berwarna merah khas red velvet dengan rasa cocoa ringan.",
+    "kategori": "Non-Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 18,
+    "nama": "Beef Puff Pastry",
+    "harga": "Rp 32.000",
+    "img": "https://images.unsplash.com/photo-1623334834418-088c10ff778b",
+    "deskripsi": "Pastry gurih dengan isian daging sapi cincang berbumbu lada hitam.",
+    "kategori": "Snack",
+    "isFavorite": false
+  },
+  {
+    "id": 19,
+    "nama": "Iced Peach Tea",
+    "harga": "Rp 27.000",
+    "img": "https://images.unsplash.com/photo-1556679343-c7306c1976bc",
+    "deskripsi": "Teh dingin dengan aroma buah peach yang manis dan harum.",
+    "kategori": "Non-Coffee",
+    "isFavorite": false
+  },
+  {
+    "id": 20,
+    "nama": "Vietnam Drip",
+    "harga": "Rp 26.000",
+    "img": "https://images.unsplash.com/photo-1544145945-f904253d0c7b",
+    "deskripsi": "Kopi tradisional Vietnam dengan susu kental manis yang legit.",
+    "kategori": "Coffee",
+    "isFavorite": false
+  }
+]
