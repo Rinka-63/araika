@@ -52,10 +52,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/contact"
                   className="text-[#FDFCF0]/60 hover:text-[#C67C4E] text-sm transition-colors"
                 >
-                  Our Story
+                  Contact
                 </Link>
               </li>
             </ul>
