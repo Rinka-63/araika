@@ -28,40 +28,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Navigation */}
-          <div className="flex flex-col items-center md:items-start space-y-4">
-            <h4 className="text-[#C67C4E] text-[10px] uppercase tracking-[0.3em] font-bold">
-              Navigation
-            </h4>
-            <ul className="space-y-2 text-center md:text-left">
-              <li>
-                <Link
-                  href="/"
-                  className="text-[#FDFCF0]/60 hover:text-[#C67C4E] text-sm transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/menu"
-                  className="text-[#FDFCF0]/60 hover:text-[#C67C4E] text-sm transition-colors"
-                >
-                  Full Menu
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-[#FDFCF0]/60 hover:text-[#C67C4E] text-sm transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Contact Info */}
+          {/* Column 2: Contact Info */}
           <div className="flex flex-col items-center md:items-start space-y-4">
             <h4 className="text-[#C67C4E] text-[10px] uppercase tracking-[0.3em] font-bold">
               Visit Us

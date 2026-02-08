@@ -40,7 +40,7 @@ export default function ContactPage() {
                   {
                     icon: <FiMapPin size={24} />,
                     title: "Location",
-                    desc: "Jl. Kopi Nikmat No. 123, Jakarta Selatan",
+                    desc: "Jl. Slamet Riyadi No. 123, Surakarta",
                   },
                   {
                     icon: <FiPhone size={24} />,
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   className="w-full bg-[#1A1412] px-4 py-4 rounded-xl border border-white/10 text-white focus:border-[#C67C4E] focus:outline-none transition-all"
-                  placeholder="Reservasi Tempat"
+                  placeholder="Subjek"
                 />
               </div>
 
