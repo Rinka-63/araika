@@ -35,7 +35,7 @@ export default function OurStory() {
   return (
     <section
       id="story"
-      className="relative pt-24 pb-20 px-4 md:px-10 bg-[#1A1412] min-h-screen overflow-hidden"
+      className="relative pt-24 pb-10 bg-[#1A1412] overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}

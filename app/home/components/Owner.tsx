@@ -43,7 +43,7 @@ export default function OwnerProfile() {
             <div className="relative w-56 h-72 md:w-64 md:h-80 overflow-hidden rounded-t-[100px] rounded-b-3xl border border-white/10 p-1 backdrop-blur-sm shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A1412] via-transparent to-transparent z-10" />
               <img
-                src="https://api.dicebear.com/7.x/notionists/png?seed=Master&backgroundColor=1a1412&mood=calm"
+                src="https://api.dicebear.com/7.x/notionists/svg?seed=Master&backgroundColor=1a1412&mood=calm"
                 alt="The Mastermind"
                 className="w-full h-full object-cover scale-110 grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700"
               />
