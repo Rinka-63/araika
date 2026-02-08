@@ -39,7 +39,7 @@ export default function FeaturedMenu() {
 
   return (
     <LazyMotion features={domAnimation}>
-      <section className="pt-10 pb-20 px-6 md:px-10 bg-[#1A1412] overflow-hidden relative">
+      <section className="py-20 px-6 md:px-10 bg-[#1A1412] overflow-hidden relative">
         {/* --- VERTICAL CONNECTOR LINE --- */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
           <m.div
