@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-// Komponen Pendukung Animasi Angka
 function Counter({
   value,
   direction = "up",
@@ -38,7 +37,6 @@ export default function OurStory() {
       className="relative pt-24 pb-10 bg-[#1A1412] overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +50,6 @@ export default function OurStory() {
           <div className="w-12 md:w-24 h-0.5 md:h-1 bg-[#C67C4E] mx-auto"></div>
         </motion.div>
 
-        {/* Content Section */}
         <div className="grid grid-cols-2 gap-4 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -94,7 +91,6 @@ export default function OurStory() {
           </motion.div>
         </div>
 
-        {/* KONEKTOR DI ATAS STATS */}
         <div className="flex flex-col items-center mt-20 -mb-px">
           <motion.div
             initial={{ height: 0 }}
@@ -103,7 +99,6 @@ export default function OurStory() {
             transition={{ duration: 1 }}
             className="w-[1px] bg-gradient-to-b from-transparent via-[#C67C4E]/50 to-[#C67C4E]"
           />
-          {/* Titik Cahaya/Dot tepat di atas garis border stats */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -113,7 +108,6 @@ export default function OurStory() {
           />
         </div>
 
-        {/* Stats Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

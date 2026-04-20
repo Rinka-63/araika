@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function OwnerProfile() {
   return (
     <section className="py-28 bg-[#1A1412] relative overflow-hidden">
-      {/* --- PREMIUM VERTICAL CONNECTOR --- */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
         <motion.div
           initial={{ height: 0 }}
@@ -24,16 +23,12 @@ export default function OwnerProfile() {
         </motion.div>
       </div>
 
-      {/* LUXURY BACKGROUND DECORATION */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#C67C4E]/5 blur-[120px] rounded-full pointer-events-none" />
-
-      {/* Subtle Gold Line Decor */}
       <div className="absolute right-0 top-1/2 w-32 h-[1px] bg-gradient-to-l from-[#C67C4E]/20 to-transparent" />
       <div className="absolute left-0 top-1/2 w-32 h-[1px] bg-gradient-to-r from-[#C67C4E]/20 to-transparent" />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10 pt-16">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-          {/* AVATAR: Noir Luxury Style */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +44,6 @@ export default function OwnerProfile() {
               />
             </div>
 
-            {/* Minimalist Floating Badge */}
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
@@ -64,7 +58,6 @@ export default function OwnerProfile() {
             </motion.div>
           </motion.div>
 
-          {/* BIO: High-End Typography */}
           <div className="flex-1 text-center md:text-left space-y-6">
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -85,7 +78,6 @@ export default function OwnerProfile() {
               </p>
             </motion.div>
 
-            {/* Premium Signature Section */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

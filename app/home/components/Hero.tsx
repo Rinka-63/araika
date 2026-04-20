@@ -15,9 +15,8 @@ export default function Hero() {
   return (
     <section
       ref={ref}
-      className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#1A1412]" // BG Espresso
+      className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#1A1412]" 
     >
-      {/* BACKGROUND IMAGE WITH PARALLAX */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070"
@@ -28,16 +27,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-[#1A1412]" />
       </motion.div>
 
-      {/* CONTENT BOX */}
       <div className="relative z-10 text-center px-6 max-w-5xl">
-        {/* Container Motion untuk Trigger Looping */}
         <motion.div
           initial="hidden"
-          whileInView="visible" // Menggunakan whileInView agar terulang
-          viewport={{ once: false, amount: 0.1 }} // once: false agar looping
+          whileInView="visible" 
+          viewport={{ once: false, amount: 0.1 }} 
           className="flex flex-col items-center"
         >
-          {/* Subtitle */}
           <motion.span
             variants={{
               hidden: { opacity: 0, y: 10 },
@@ -49,7 +45,6 @@ export default function Hero() {
             Crafted with Passion Since 2018
           </motion.span>
 
-          {/* TEXT WITH SHIMMER EFFECT */}
           <h1 className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-5xl md:text-8xl font-serif mb-8 leading-[1.1]">
             {mainTitle.split(" ").map((word, i) => (
               <span
@@ -84,7 +79,6 @@ export default function Hero() {
             ))}
           </h1>
 
-          {/* Divider Line */}
           <motion.div
             variants={{
               hidden: { scaleX: 0 },
@@ -94,7 +88,6 @@ export default function Hero() {
             className="w-32 h-[1px] bg-white/40 mb-8"
           />
 
-          {/* Italic Quote */}
           <motion.p
             variants={{
               hidden: { opacity: 0 },
@@ -108,7 +101,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* SCROLL INDICATOR */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
         <div className="w-[1px] h-16 bg-white/20 relative overflow-hidden">
           <motion.div

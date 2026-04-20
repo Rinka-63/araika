@@ -6,7 +6,6 @@ export default function ContactPage() {
   return (
     <section className="min-h-screen pt-32 pb-20 px-10 bg-[#1A1412]">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,7 +21,6 @@ export default function ContactPage() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Info Card Section */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -35,7 +33,6 @@ export default function ContactPage() {
               </h2>
 
               <div className="space-y-8">
-                {/* Item Info */}
                 {[
                   {
                     icon: <FiMapPin size={24} />,
@@ -74,7 +71,6 @@ export default function ContactPage() {
             </div>
           </motion.div>
 
-          {/* Form Section */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatWA"; // Impor ini
+import FloatingWhatsApp from "@/components/FloatWA";
 import "./globals.css";
 
 export default function RootLayout({

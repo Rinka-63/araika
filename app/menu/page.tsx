@@ -10,9 +10,6 @@ import {
   Variants,
 } from "framer-motion";
 
-/* =========================
-   TYPE DEFINITIONS
-========================= */
 interface MenuItem {
   id: number;
   nama: string;
@@ -22,9 +19,6 @@ interface MenuItem {
   kategori: string;
 }
 
-/* =========================
-   VARIANTS (SMOOTH ANIMATION)
-========================= */
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -44,9 +38,6 @@ const cardVariants: Variants = {
   exit: { opacity: 0, scale: 0.9, transition: { duration: 0.2 } },
 };
 
-/* =========================
-   MENU CARD (OPTIMIZED FOR 4x2 GRID)
-========================= */
 function MenuCard({ item }: { item: MenuItem }) {
   return (
     <m.div
@@ -55,7 +46,7 @@ function MenuCard({ item }: { item: MenuItem }) {
       whileHover={{ y: -8 }}
       className="bg-[#241C1A] rounded-2xl md:rounded-3xl border border-white/5 shadow-xl overflow-hidden flex flex-col group h-full transition-all duration-300 hover:border-[#C67C4E]/30"
     >
-      {/* IMAGE AREA - Tinggi disesuaikan agar proporsional di grid kecil */}
+
       <div className="relative h-40 md:h-64 overflow-hidden bg-[#1A1412]">
         <img
           src={`${item.img}?w=500&q=75`}
@@ -69,18 +60,15 @@ function MenuCard({ item }: { item: MenuItem }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#241C1A] via-transparent to-transparent opacity-80" />
       </div>
 
-      {/* TEXT CONTENT */}
       <div className="p-3 md:p-6 flex flex-col flex-grow relative z-10">
         <h3 className="text-xs md:text-xl font-serif text-[#FDFCF0] leading-tight mb-1 md:mb-3 group-hover:text-[#C67C4E] transition-colors line-clamp-1">
           {item.nama}
         </h3>
 
-        {/* Deskripsi diperhalus: hanya muncul 1 baris di mobile */}
         <p className="text-[9px] md:text-sm text-[#FDFCF0]/40 line-clamp-1 md:line-clamp-2 leading-relaxed mb-3 md:mb-6 font-light">
           {item.deskripsi}
         </p>
 
-        {/* Price Row */}
         <div className="mt-auto flex justify-between items-center pt-2 md:pt-4 border-t border-white/5">
           <span className="hidden md:block text-[8px] md:text-[10px] uppercase tracking-widest text-[#C67C4E] font-bold">
             Price
@@ -112,7 +100,6 @@ export default function FullMenuPage() {
     <LazyMotion features={domAnimation}>
       <div className="py-20 md:py-32 px-3 md:px-10 min-h-screen bg-[#1A1412]">
         <div className="max-w-7xl mx-auto">
-          {/* HEADER */}
           <m.div className="text-center mb-10">
             <h1 className="text-3xl md:text-6xl font-serif text-[#FDFCF0] mb-4">
               Our Masterpiece
@@ -120,10 +107,8 @@ export default function FullMenuPage() {
             <div className="w-12 md:w-20 h-1 bg-[#C67C4E] mx-auto rounded-full" />
           </m.div>
 
-          {/* TAB FILTER (Scrollable di Mobile) */}
           <div className="sticky top-16 z-30 bg-[#1A1412]/90 backdrop-blur-md py-4 mb-8 border-b border-white/5 overflow-x-auto no-scrollbar">
             <div className="flex justify-center min-w-full md:min-w-0">
-              {/* min-w-full dan justify-center di atas memastikan dia center jika muat */}
               <div className="flex gap-2 md:gap-3 px-6">
                 {categories.map((cat) => (
                   <button
@@ -142,7 +127,6 @@ export default function FullMenuPage() {
             </div>
           </div>
 
-          {/* GRID SYSTEM: 2 kolom mobile, 4 kolom desktop */}
           <m.div
             key={filter}
             variants={containerVariants}

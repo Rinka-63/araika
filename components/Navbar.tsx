@@ -16,21 +16,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Logika Menutup Menu saat Klik, Scroll, atau Swipe di luar area
   useEffect(() => {
     const handleOutsideActivity = (event: Event) => {
-      // Jika menu terbuka dan aktivitas terjadi di luar elemen navRef
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
 
     if (isOpen) {
-      // Deteksi klik
       document.addEventListener("mousedown", handleOutsideActivity);
-      // Deteksi geser mouse (scroll wheel)
       document.addEventListener("wheel", handleOutsideActivity);
-      // Deteksi geser layar (touch swipe untuk HP)
       document.addEventListener("touchmove", handleOutsideActivity);
     }
 
@@ -84,7 +79,6 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-6 md:gap-10">
-          {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 font-medium text-[11px] lg:text-[#FDFCF0] uppercase tracking-widest">
             {navLinks.map((link) => (
               <Link
@@ -109,7 +103,6 @@ export default function Navbar() {
               Order Now
             </button>
 
-            {/* Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="flex flex-col gap-1.5 md:hidden p-2"
@@ -128,7 +121,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Dropdown Menu Mobile - Versi Lebih Kecil & Kompak */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -159,7 +151,6 @@ export default function Navbar() {
                 </motion.div>
               ))}
 
-              {/* Divider: Putih Transparan */}
               <div className="h-[1px] bg-white/5 my-2 mx-4" />
 
               <div className="px-2 pb-2">

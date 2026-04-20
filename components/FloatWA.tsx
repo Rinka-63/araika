@@ -14,18 +14,14 @@ export default function FloatingWhatsApp() {
       whileTap={{ scale: 0.9 }}
       className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[9999] group flex items-center"
     >
-      {/* Label Tooltip Luxury */}
       <span className="mr-[-12px] pr-10 pl-5 py-2.5 bg-[#241C1A] text-[#FDFCF0] text-[10px] font-bold uppercase tracking-[0.2em] rounded-l-full border border-[#C67C4E]/30 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0 pointer-events-none shadow-2xl">
         WhatsApp Araika
       </span>
 
-      {/* Circle Icon Container */}
       <div className="relative">
-        {/* Ambient Pulse Effect */}
         <div className="absolute inset-0 bg-[#C67C4E] blur-xl opacity-30 animate-pulse rounded-full" />
 
         <div className="relative bg-[#241C1A] border border-[#C67C4E]/50 text-[#C67C4E] p-4 md:p-5 rounded-full shadow-2xl flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:border-[#C67C4E] group-hover:shadow-[0_0_20px_rgba(198,124,78,0.3)]">
-          {/* Shine Sweep Effect */}
           <motion.div
             animate={{ x: ["-150%", "150%"] }}
             transition={{ repeat: Infinity, duration: 4, ease: "linear" }}

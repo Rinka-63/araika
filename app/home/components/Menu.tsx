@@ -16,14 +16,12 @@ export default function FeaturedMenu() {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Fungsi untuk reset timer auto-slide
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
   }
 
-  // Efek Auto-Slide setiap 3 detik
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -40,7 +38,6 @@ export default function FeaturedMenu() {
   return (
     <LazyMotion features={domAnimation}>
       <section className="py-20 px-6 md:px-10 bg-[#1A1412] overflow-hidden relative">
-        {/* --- VERTICAL CONNECTOR LINE --- */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
           <m.div
             initial={{ height: 0 }}
@@ -56,12 +53,9 @@ export default function FeaturedMenu() {
             className="w-2 h-2 rounded-full bg-[#C67C4E] -mt-1 shadow-[0_0_10px_#C67C4E]"
           />
         </div>
-        {/* ------------------------------ */}
 
         <div className="max-w-6xl mx-auto pt-10">
           {" "}
-          {/* Tambah padding top agar garis tidak menabrak teks */}
-          {/* HEADER */}
           <m.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,12 +67,9 @@ export default function FeaturedMenu() {
             </h2>
             <div className="w-16 h-1 bg-[#C67C4E] mx-auto rounded-full" />
           </m.div>
-          {/* CAROUSEL CONTAINER (Isi tetap sama seperti kode kamu) */}
-          {/* ... sisa kode carousel dan grid ... */}
+
           <div className="relative w-full max-w-sm mx-auto md:max-w-none md:grid md:grid-cols-3 md:gap-8 mb-16">
-            {/* MOBILE SLIDER */}
             <div className="block md:hidden relative h-[420px] w-full">
-              {/* ... isi slider ... */}
               <AnimatePresence mode="wait">
                 <m.div
                   key={favorites[index].id}
@@ -164,7 +155,6 @@ export default function FeaturedMenu() {
               ))}
             </div>
           </div>
-          {/* EXPLORE BUTTON */}
           <div className="text-center mt-12">
             <Link href="/menu">
               <m.button

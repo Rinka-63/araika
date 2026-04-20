@@ -8,7 +8,6 @@ export default function Footer() {
     <footer className="bg-[#1A1412] pt-20 pb-10 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          {/* Column 1: Brand Identity */}
           <div className="space-y-6 text-center md:text-left">
             <h2 className="font-serif font-bold text-3xl tracking-tighter text-[#EAD8B1]">
               ARAIKA
@@ -18,7 +17,6 @@ export default function Footer() {
               adalah jembatan cerita antara petani dan penikmatnya.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
-              {/* Social Icons Placeholder */}
               <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C67C4E] hover:border-[#C67C4E] transition-all cursor-pointer">
                 <span className="text-[10px] text-white">IG</span>
               </div>
@@ -28,7 +26,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Contact Info */}
           <div className="flex flex-col items-center md:items-start space-y-4">
             <h4 className="text-[#C67C4E] text-[10px] uppercase tracking-[0.3em] font-bold">
               Visit Us
@@ -43,7 +40,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* BOTTOM SECTION */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[10px] text-white/20 uppercase tracking-widest text-center">
             © 2026 Araika Coffee Co.

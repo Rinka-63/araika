@@ -7,7 +7,6 @@ import OwnerProfile from "./home/components/Owner";
 
 export default function Home() {
   return (
-    // Ubah bg ke #1A1412 agar menyatu dengan tema Luxury
     <main className="bg-[#1A1412] min-h-screen">
       <Hero />
       <OurStory />

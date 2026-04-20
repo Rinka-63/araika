@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  /* Warna Dasar Luxury Araika */
-  --background: #1A1412; /* Cokelat Gelap khas Araika */
-  --foreground: #FDFCF0; /* Cream Terang untuk Teks */
+  --background: #1A1412; 
+  --foreground: #FDFCF0; 
   
   /* Accent Colors */
-  --accent: #C67C4E;      /* Emas/Tembaga */
-  --champagne: #EAD8B1;   /* Champagne Gold untuk teks brand */
+  --accent: #C67C4E;     
+  --champagne: #EAD8B1;   
 }
 
 @theme inline {
@@ -17,7 +16,6 @@
   --color-brand-gold: var(--champagne);
 }
 
-/* Memastikan transisi warna smooth di seluruh web */
 * {
   scroll-behavior: smooth;
 }
@@ -25,13 +23,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  /* Gunakan font sans-serif yang lebih modern atau bawaan Next.js */
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Scrollbar agar tetap Luxury */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -41,7 +37,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C67C4E33; /* Emas transparan */
+  background: #C67C4E33; 
   border-radius: 10px;
 }
 
